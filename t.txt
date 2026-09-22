@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landlord and My Mom - Confession</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #0f172a; 
+            color: #f8fafc; 
+            padding: 30px 20px; 
+            max-width: 800px; 
+            margin: auto; 
+            line-height: 1.8;
+        }
+        h1 { 
+            color: #38bdf8; 
+            text-align: center;
+            font-size: 28px;
+            margin-top: 20px;
+        }
+        /* Story base white section */
+        .story-container {
+            background: #ffffff;
+            color: #1e293b;
+            padding: 35px;
+            border-radius: 12px;
+            margin-top: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .story-content { 
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        .story-content p {
+            margin-bottom: 20px;
+            color: #334155;
+        }
+        .ad-box {
+            text-align: center;
+            margin: 25px 0;
+            padding: 15px;
+            background: #f1f5f9;
+            border: 1px dashed #cbd5e1;
+            border-radius: 8px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 10px;
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+
+    <h1>My Landlord and My Mom...</h1>
+
+    <div class="story-container">
+        
+        <!-- Top Adsterra Banner Ad -->
+        <div class="ad-box">
+            <!-- APNA ADSTERRA BANNER CODE YAHAN PASTE KAREIN -->
+            <p style="color: #64748b; font-size: 14px; margin: 0;">[Adsterra Banner Code Here]</p>
+        </div>
+
+        <div class="story-content">
+            <p>Yahan apni poori story likhein... Maslan: Yeh us waqt ki baat hai jab main achanak room mein gaya aur dekha ke...</p>
+            <p>Apni story ko yahan mazeed tafseel se likhte jayein taake padhne walo ko maza aaye.</p>
+        </div>
+
+        <!-- Bottom Adsterra Banner Ad -->
+        <div class="ad-box">
+            <!-- APNA DOSRA ADSTERRA BANNER CODE YAHAN PASTE KAREIN -->
+            <p style="color: #64748b; font-size: 14px; margin: 0;">[Adsterra Banner Code Here]</p>
+        </div>
+
+    </div>
+
+    <br>
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+
+</body>
+</html>
