@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confessions - Real Life Stories & Secrets</title>
+    <title>Confession Hub - Home | True Stories & Confessions</title>
     
     <!-- Adsterra Header Banner (728x90) -->
     <script type="text/javascript">
@@ -28,121 +28,130 @@
         }
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
-        header { background-color: var(--primary-color); color: #fff; padding: 20px 0; text-align: center; border-bottom: 4px solid var(--accent-color); }
+        header { background-color: var(--primary-color); color: #fff; padding: 25px 0; text-align: center; border-bottom: 4px solid var(--accent-color); }
         header h1 { font-size: 2.5rem; letter-spacing: 2px; text-transform: uppercase; }
-        nav { background-color: #222; padding: 10px 0; text-align: center; }
-        nav a { color: #fff; text-decoration: none; margin: 0 15px; font-size: 0.95rem; font-weight: 600; text-transform: uppercase; transition: color 0.3s; }
+        nav { background-color: #222; padding: 12px 0; text-align: center; }
+        nav a { color: #fff; text-decoration: none; margin: 0 15px; font-size: 0.95rem; font-weight: 600; text-transform: uppercase; }
         nav a:hover { color: var(--accent-color); }
-        .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
-        .section-title { font-size: 1.5rem; text-transform: uppercase; border-bottom: 2px solid var(--primary-color); padding-bottom: 8px; margin-bottom: 25px; letter-spacing: 1px; }
-        .stories-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
-        .stories-list { display: flex; flex-direction: column; gap: 30px; }
-        .main-story-card { background: var(--card-bg); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
-        .main-story-card:hover { transform: translateY(-3px); }
-        .story-img { width: 100%; height: 280px; object-fit: cover; }
-        .story-info { padding: 25px; }
-        .story-category { color: var(--accent-color); font-size: 0.85rem; font-weight: bold; text-transform: uppercase; margin-bottom: 8px; display: block; }
-        .story-title { font-size: 1.6rem; color: var(--primary-color); margin-bottom: 12px; line-height: 1.3; }
-        .story-excerpt { color: #555; font-size: 1rem; margin-bottom: 20px; }
-        .read-more-btn { display: inline-block; background-color: var(--primary-color); color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.3s; }
-        .read-more-btn:hover { background-color: var(--accent-color); }
-        .sidebar { display: flex; flex-direction: column; gap: 20px; }
-        .sidebar-card { background: var(--card-bg); padding: 20px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
-        .sidebar-card h3 { font-size: 1.1rem; margin-bottom: 10px; color: var(--primary-color); border-bottom: 1px solid #eee; padding-bottom: 5px; text-align: left; }
-        footer { background-color: var(--primary-color); color: #fff; text-align: center; padding: 20px 0; margin-top: 50px; font-size: 0.9rem; }
-        @media (max-width: 768px) { .stories-grid { grid-template-columns: 1fr; } }
+        .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+        .story-card { background: var(--card-bg); padding: 35px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 40px; border-left: 5px solid var(--accent-color); }
+        .article-category { color: var(--accent-color); font-weight: bold; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 10px; display: inline-block; }
+        .article-title { font-size: 2rem; color: var(--primary-color); margin-bottom: 15px; line-height: 1.3; }
+        .article-meta { color: var(--meta-color); font-size: 0.85rem; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 12px; }
+        .article-image { width: 100%; max-height: 450px; object-fit: cover; border-radius: 6px; margin-bottom: 25px; }
+        .ad-container { margin: 25px 0; text-align: center; overflow-x: auto; }
+        .article-content p { margin-bottom: 18px; font-size: 1.05rem; color: #444; }
+        .section-heading { font-size: 1.8rem; color: var(--primary-color); margin: 40px 0 20px 0; border-bottom: 2px solid #ddd; padding-bottom: 10px; }
+        footer { background-color: var(--primary-color); color: #fff; text-align: center; padding: 25px 0; margin-top: 50px; font-size: 0.9rem; }
+        @media (max-width: 768px) { .article-title { font-size: 1.5rem; } .story-card { padding: 20px; } }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Confessions</h1>
+        <h1>Confession Hub</h1>
+        <p style="color: #bbb; font-size: 0.9rem; margin-top: 5px;">Real Stories, Heartbreaks & True Confessions</p>
     </header>
 
     <nav>
-        <a href="/">Home</a>
-        <a href="#">Secret Stories</a>
-        <a href="#">Trending</a>
-        <a href="#">Categories</a>
+        <a href="index.html">Home</a>
+        <a href="#story1">Featured Story</a>
+        <a href="#other-stories">More Stories</a>
         <a href="#">Contact</a>
     </nav>
 
-    <div class="container" style="text-align: center; margin-top: 20px;">
-        <!-- Top Adsterra Banner (468x60) -->
-        <script type="text/javascript">
-            atOptions = {
-                'key' : 'e3cedebca8833b7645e1ad8b2f5f9edc',
-                'format' : 'iframe',
-                'height' : 60,
-                'width' : 468,
-                'params' : {}
-            };
-        </script>
-        <script type="text/javascript" src="//preliminarycultural.com/e3cedebca8833b7645e1ad8b2f5f9edc/invoke.js"></script>
-    </div>
-
     <div class="container">
-        <h2 class="section-title">Latest Stories</h2>
-        
-        <div class="stories-grid">
-            <!-- Stories Column -->
-            <div class="stories-list">
-                
-                <!-- Story Card 3 -->
-                <article class="main-story-card">
-                    <img src="https://i.pinimg.com/originals/4d/8d/a6/4d8da670bf633d16a0acf7960b46d1f0.gif" alt="Cheating Wife Story Image" class="story-img">
-                    <div class="story-info">
-                        <span class="story-category">Heartbreaking Confessions</span>
-                        <h2 class="story-title">Found my wife cheating on me last night</h2>
-                        <p class="story-excerpt">I met my wife in 2011, I was DJ-ing a social event at school and playing some 90s rocks...</p>
-                        <a href="cheating-wife-story.html" class="read-more-btn">Read Full Story &rarr;</a>
-                    </div>
-                </article>
 
-                <!-- Story Card 2 -->
-                <article class="main-story-card">
-                    <img src="https://i.pinimg.com/736x/2b/a6/cf/2ba6cf460bcc855544a608ec758a68e4.jpg" alt="AITAH Story Image" class="story-img">
-                    <div class="story-info">
-                        <span class="story-category">Relationship Confessions</span>
-                        <h2 class="story-title">AITAH For letting my husband sleep with other women?</h2>
-                        <p class="story-excerpt">Hiya, sorry, bit of an awkward title, im like 99% sure im NTA here, but just checking my ground...</p>
-                        <a href="aitah-husband-story.html" class="read-more-btn">Read Full Story &rarr;</a>
-                    </div>
-                </article>
+        <!-- ==================== STORY 1: MAIN CHEATING UPDATE STORY ==================== -->
+        <article class="story-card" id="story1">
+            <span class="article-category">Heartbreaking Confessions</span>
+            <h1 class="article-title">I recorded my wife cheating on me and I can't stop watching it (Full Update)</h1>
+            <div class="article-meta">Published on September 22, 2026 • By Confession Hub</div>
 
-                <!-- Story Card 1 -->
-                <article class="main-story-card">
-                    <img src="https://i.pinimg.com/736x/e3/1a/1d/e31a1d707cf992b0eae2b2d9ed6bb795.jpg" alt="Heartbroken confession" class="story-img">
-                    <div class="story-info">
-                        <span class="story-category">Heartbreaking Confessions</span>
-                        <h2 class="story-title">My husband admitted to sleeping with 8 women (update)</h2>
-                        <p class="story-excerpt">I have no desire to put my hands on him again. I’m just here because I’m struggling...</p>
-                        <a href="husband-confession.html" class="read-more-btn">Read Full Story &rarr;</a>
-                    </div>
-                </article>
-
+            <!-- Adsterra Banner (468x60) -->
+            <div class="ad-container">
+                <script type="text/javascript">
+                    atOptions = {
+                        'key' : 'e3cedebca8833b7645e1ad8b2f5f9edc',
+                        'format' : 'iframe',
+                        'height' : 60,
+                        'width' : 468,
+                        'params' : {}
+                    };
+                </script>
+                <script type="text/javascript" src="//preliminarycultural.com/e3cedebca8833b7645e1ad8b2f5f9edc/invoke.js"></script>
             </div>
 
-            <!-- Sidebar / Right Side with Multiple Ads -->
-            <aside class="sidebar">
-                <div class="sidebar-card">
-                    <h3>Sponsored Ad (160x600)</h3>
-                    <!-- Adsterra Sidebar Ad 1 (160x600) -->
+            <!-- Pinterest GIF Image -->
+            <img src="https://i.pinimg.com/originals/0b/e2/67/0be2673972185f45c77df04ac047d5f4.gif" alt="Story GIF Image" class="article-image">
+
+            <div class="article-content">
+                <p>A couple weeks ago I decided I wanted to surprise my wife with a kid-free night out. My parents live about an hour and a half away from us and I arranged for the kids to stay with them for the weekend.</p>
+                <p>Usually, when I go to my parents I am gone until later in the evening. We spend all day there and leave around dinner time. This time, I was dropping the kids off and immediately going home so I could surprise my wife and we could go out as soon as possible. I had made reservations at a nice restaurant and was hoping to go to a few places for some drinks first.</p>
+                <p>I left at 8:30 and was back in our housing plan before 12:30. As I pulled onto my street I saw a truck parked in front of my house. I did not recognize it. I assumed it was someone seeing the neighbors though because it's not that unusual for someone to park in front of our house.</p>
+
+                <!-- Adsterra Middle Ad (300x250) -->
+                <div class="ad-container">
                     <script type="text/javascript">
                         atOptions = {
-                            'key' : 'eb0bedea2d1b25e28173233d88e1c864',
+                            'key' : '40310a919e1a74732980d81208fcdf7b',
                             'format' : 'iframe',
-                            'height' : 600,
-                            'width' : 160,
+                            'height' : 250,
+                            'width' : 300,
                             'params' : {}
                         };
                     </script>
-                    <script type="text/javascript" src="//preliminarycultural.com/eb0bedea2d1b25e28173233d88e1c864/invoke.js"></script>
+                    <script type="text/javascript" src="//preliminarycultural.com/40310a919e1a74732980d81208fcdf7b/invoke.js"></script>
                 </div>
 
-                <div class="sidebar-card">
-                    <h3>Sponsored Ad (160x300)</h3>
-                    <!-- Adsterra Sidebar Ad 2 (160x300) -->
+                <p>I parked a few houses away thinking I would sneak into the house and surprise my wife instead of pulling in the driveway and going in the garage. I went in through a basement door. I was as quiet as possible but as soon as I walked in I heard her making sounds from the floor above.</p>
+                <p>When I first heard it I thought she was just by herself, maybe having some personal time. I didn’t want to interrupt her privacy and embarrass her so I was going to go back to my car and just go in the garage so she would know I was home. Then I heard a man’s voice. I immediately felt sick. My heart felt like it was going to explode out of my chest.</p>
+                <p>It is hard to describe how I felt in this moment. I decided to go upstairs. I had no desire to confront them, I just wanted to see what was going on. I moved slowly and quietly and went up the stairs. The door was halfway open. The kitchen was empty but I could tell they were in the living room. It was obvious what was going on at this point by the sounds.</p>
+                <p>There was no way for me to look in the living room without them seeing me. I pulled out my phone and opened my camera app. I put my phone just around the corner of a wall.</p>
+                <p>This part is so hard to write. I could see my wife with a man I didn’t recognize. I won’t go into detail on what they were doing but I think you can figure it out. I started recording it, I was thinking that I needed a record of it for whatever I decided to do in the future. I just stood there in my kitchen, watching this all unfold on my phone screen. I felt like I could just scream at any moment but for some reason I just froze completely. This went on for several minutes.</p>
+                <p>She finally jumped off of him and made a comment about going to the bedroom and they went upstairs. She even made a comment about how much time they had left.</p>
+                <p>I walked into the living room and found the guy’s pants. I took his wallet out and took pictures of his driver's license. I know his name and his address now. I've never met him. I have no idea how my wife knows him.</p>
+                <p>I left the house the same way I entered. I went back to my car and cried like the pathetic man I am. I decided to watch the video to make sure it recorded. I watched it all.</p>
+                <p>I'll spare the details but I sat in my car for at least half an hour. I couldn't drive to my parents and get the kids as I would have to explain why. I decided that I would pull in the driveway, open the garage, and just pretend like I was there to surprise her. I took my time getting into the house. I made a lot of noise. When I saw her she was very flustered asking me why I was home, etc. She was in a robe and said she was just getting ready for a bath.</p>
+                <p>I told her about my plans and she seemed excited. She poured us both a glass of wine and said we should pregame before getting ready. I don’t think I talked much really. She took me into the living room. I’m not proud of what I let happen. I could faintly see the guy sneaking downstairs and going to the basement stairs but I didn’t say or do anything, I just let my wife continue doing what she was doing to me.</p>
+                <p>Since that day, I have watched the video of her repeatedly. I can’t bring myself to make any decisions on what I should do next. She seems to know something is wrong with me because she’s asked a few times if I’m ok.</p>
+                <p>I feel worthless and every time I hit a low point I watch that video again. I feel like I've watched it at least 10 times a day since I caught them.</p>
+                
+                <hr style="margin: 30px 0; border: 0; border-top: 1px solid #ddd;">
+                
+                <h3 style="margin-bottom: 15px; color: var(--primary-color);">UPDATE: Confrontation and Aftermath</h3>
+                
+                <p>I stopped watching the video after reading all the comments on my first post. It has helped clear my mind and allowed me to focus on next steps. This has allowed me to be mostly back to my normal self for both my kids and my job.</p>
+                <p>I have gone through my wife's phone and found nothing.</p>
+                <p>I searched the guys name from the driver's license. I've figured out how they met. He's a landscaper. She was calling some a few months ago to clean up our yard and ended up getting some mulching and clean up done.</p>
+                <p>I've driven past his house many times. I think he is single as I couldn't find any records of other people living at that address. I've only seen a truck parked in the driveway when I have driven by.</p>
+                <p>I have been avoiding my wife after the kids are in bed to try to limit 1 on 1 time. I don't want any awkward conversations and I also don't want to have sex. I have mostly been successful with this but did slip up one night when I had a little too much to drink. I hated myself for it the next day.</p>
+                <p>I don't believe she has seen him since the day I caught them. I've been paying attention anytime she's gone. I obviously can't track her 100%. I've read about apple air tags but I use android. I'm guessing any app I would put on her phone may be discovered. I have installed a doorbell camera on our house though so I can always see the street. When i did this my wife didnt say anything.</p>
+                <p>We continue to do things as a family as we normally would. I have done my best to not let her know what I know and to continue to be a good dad to my kids.</p>
+                <p>The weird thing I'm dealing with now is that she's planned a night out with a friend for drinks. It's a friend from work so I don't know her at all and I'm not connected with this person on social media. When she told me I made up some excuse about work and said I couldn't watch the kids. She ended up getting our neighbor to agree to babysit.</p>
+                <p>Now I'm debating if I should follow her to really see if she's meeting her friend or the guy. It seems like I'm heading towards a confrontation either way when I just want everything to go back to normal.</p>
+                <p>I'm going to leave my house soon and pretend to be going to work. I'll probably just go to a bar to kill time until I can drive by the place she's supposed to be going to. I'm filled with fucking dread about all of this.</p>
+                <p>On the night when she was going out with her friend I still pretended I had work and left the house after the babysitter arrived.</p>
+                <p>I went to a bar and had a few drinks. Then I drove over to the restaurant she said she was going to. I saw her car in the parking lot. I'm not going to lie, I was on edge and incredibly nervous despite the drinks earlier. I was so worried I would walk in and see her with that guy.</p>
+                <p>I was hoping to sneak in and get a look without being seen but that failed miserably. She saw me as soon as I walked in the door. She was with her friend and not the guy. We had the “What are you doing here? Thought you were working” expected conversation. I told her work ended early so I wanted to stop by to say hi since we had a babysitter.</p>
+                <p>I left after a couple drinks and went home to relieve the sitter.</p>
+                <p>So many of you have commented on my last post that I need to confront her and I decided in that moment that I would. I couldn't hold it in any longer. I got the kids to bed and waited for her to come home.</p>
+                <p>I watched the video again to remind myself of what happened.</p>
+                <p>When she got home she was surprised I was still up and apparently could tell from the way I looked that something was wrong. I poured it all out on her. It probably wasn't fair of me, I didn’t even let her sit down. I told her everything. I played part of the video to show her what I saw. I called her some harsh names, said she ruined our lives. In that moment i was incredibly angry.</p>
+                <p>She was very upset, heavily crying and shaking. She told me how terrible she felt about everything that happened. I told her she had to tell me everything that happened with that guy and she laid it all out. She cheated on me twice with him. After the time I saw them she cut things off because she knew it was wrong and she loves me.</p>
+                <p>I asked her for proof but she said she had already deleted and blocked him on her phone, Facebook, and Instagram. She did tell me that he is single and knew she was married.</p>
+                <p>She asked me to delete the video but I refused. She asked me why and I really didn't have a reason other than I feel I need to hold onto it for now. She got a little angry at that and asked if I was keeping it to watch again. It was very late at this point so we decided to go to bed and talk more the next day when we had more time to think. She continued to apologize repeatedly for what did. We slept separately that night.</p>
+                <p>Over the next few days things between us seemed better. I felt some relief that it was all out in the open now. We have continued to talk and it feels like we are on a path of staying together and moving past this. I have made it clear that she is never to see or talk to that guy again.</p>
+                <p>While things feel like they are improving I am still struggling to trust her. Worse yet is that I have a trip coming up for work and I'll be gone for a few days. I've told her that I am not comfortable with leaving right now but I can't skip this trip. My boss made it clear that I'm needed. She said I could put cameras up in the house to keep an eye on her if it would make me feel better. Sadly I may do that. I'll be gone for at least 3 days.</p>
+                <p>Overall things are ok. Kids are oblivious that anything is going on and it seems that slowly my wife and I will eventually get back to normal. I hope so at least.</p>
+                <p>I'm a little ashamed to admit that I have watched the video a few times since all of this. I'm thinking that I should probably delete it so it's gone from my life. I don't know what's wrong with me.</p>
+
+                <!-- Adsterra End Ads for Story 1 -->
+                <div class="ad-container" style="margin-top: 40px;">
+                    <script src="https://preliminarycultural.com/a9/3f/2f/a93f2fbdf6ab10df08947956664222fb.js"></script>
+                </div>
+
+                <div class="ad-container" style="margin-top: 20px;">
                     <script type="text/javascript">
                         atOptions = {
                             'key' : 'fa10a51ef99cd76f39de630c22a2c7b2',
@@ -154,13 +163,50 @@
                     </script>
                     <script type="text/javascript" src="//preliminarycultural.com/fa10a51ef99cd76f39de630c22a2c7b2/invoke.js"></script>
                 </div>
+            </div>
+        </article>
 
-                <div class="sidebar-card" style="text-align: left;">
-                    <h3>About Confession Hub</h3>
-                    <p style="font-size: 0.9rem; color: var(--meta-color);">A safe space to share real-life emotional confessions, relationship struggles, and secret heartbreaks anonymously.</p>
-                </div>
-            </aside>
-        </div>
+        <h2 class="section-heading" id="other-stories">More Trending Confessions</h2>
+
+        <!-- ==================== STORY 2: HEALTH & WELLNESS (SOMATIC MOVEMENT) ==================== -->
+        <article class="story-card">
+            <span class="article-category">Health & Wellness</span>
+            <h2 class="article-title">How Somatic Movement Completely Changed My Daily Energy and Stress Levels</h2>
+            <div class="article-meta">Published on September 19, 2026 • By Wellness Editor</div>
+            
+            <div class="article-content">
+                <p>For years, I struggled with chronic shoulder tension and mental exhaustion that standard workouts just couldn't fix. No matter how much I stretched or hit the gym, my body felt locked in a constant state of high alert. That was until I discovered the profound science of somatic movement.</p>
+                <p>Unlike traditional stretching or heavy lifting, somatic exercises focus on the internal experience of movement rather than external performance. By retraining the nervous system to release subconscious muscular holding patterns, these slow, deliberate micro-movements help reset the brain-to-muscle connection.</p>
+                <p>Implementing just 10 minutes of somatic flow every morning transformed my posture, eliminated my midday brain fog, and gave me a natural surge of calm energy. If you are feeling chronically burnt out, tuning into your nervous system might just be the missing link in your wellness routine.</p>
+            </div>
+        </article>
+
+        <!-- ==================== STORY 3: SLEEP OPTIMIZATION ==================== -->
+        <article class="story-card">
+            <span class="article-category">Lifestyle & Sleep</span>
+            <h2 class="article-title">The Real Truth About Sleep Optimization: Why 8 Hours Isn't Enough for Everyone</h2>
+            <div class="article-meta">Published on September 15, 2026 • By Health Desk</div>
+            
+            <div class="article-content">
+                <p>We've all been told that eight hours of uninterrupted sleep is the holy grail of health. Yet, millions of people still wake up feeling like they were hit by a truck. The secret isn't just about the duration of your rest—it is fundamentally about sleep cycle architecture and circadian alignment.</p>
+                <p>Deep sleep and REM sleep occur in distinct 90-minute cycles. Waking up in the middle of a deep sleep stage leads to severe sleep inertia, leaving you groggy regardless of how many hours you logged under the covers. Furthermore, evening blue light exposure and late-night snacking severely suppress melatonin production, destroying your recovery quality.</p>
+                <p>By shifting focus toward consistent wake times, natural morning sunlight exposure, and magnesium-rich evening rituals, restorative sleep finally becomes achievable without relying on endless caffeine loops.</p>
+            </div>
+        </article>
+
+        <!-- ==================== STORY 4: MINDFULNESS & RELATIONSHIP DYNAMICS ==================== -->
+        <article class="story-card">
+            <span class="article-category">Relationships</span>
+            <h2 class="article-title">Recognizing Emotional Distance: How Silent Resentment Destroys Long-Term Bonds</h2>
+            <div class="article-meta">Published on September 10, 2026 • By Relationship Insights</div>
+            
+            <div class="article-content">
+                <p>Relationships rarely end with a sudden explosion; most of the time, they quietly erode under the heavy weight of unexpressed frustrations and unspoken boundaries. When small annoyances are brushed aside to keep the peace, they turn into silent resentment.</p>
+                <p>Emotional distance often creeps in subtly—avoiding eye contact, staying late at work intentionally, or scrolling on phones instead of talking before bed. True intimacy requires radical honesty and the courage to address uncomfortable truths before they turn into permanent emotional walls.</p>
+                <p>Healing a strained connection begins with accountability, active listening, and creating a safe space where both partners can express their vulnerabilities without immediate defensiveness.</p>
+            </div>
+        </article>
+
     </div>
 
     <footer>
