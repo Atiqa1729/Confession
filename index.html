@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confessions - Real Life Stories & Secrets</title>
     
-    <!-- Adsterra Header Script for Homepage -->
+    <!-- Adsterra Header Banner (728x90) -->
     <script type="text/javascript">
         atOptions = {
             'key' : '3199a099e841ff493d8e1505029c1ff5',
@@ -26,160 +26,31 @@
             --text-color: #333;
             --meta-color: #777;
         }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-        /* Header & Navigation */
-        header {
-            background-color: var(--primary-color);
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            border-bottom: 4px solid var(--accent-color);
-        }
-        header h1 {
-            font-size: 2.5rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-        nav {
-            background-color: #222;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 0.95rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: var(--accent-color);
-        }
-        /* Container Layout */
-        .container {
-            max-width: 1100px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-        .section-title {
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 8px;
-            margin-bottom: 25px;
-            letter-spacing: 1px;
-        }
-        /* Story Grid System for Multiple Cards */
-        .stories-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 30px;
-        }
-        .stories-list {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-        .main-story-card {
-            background: var(--card-bg);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
-        }
-        .main-story-card:hover {
-            transform: translateY(-3px);
-        }
-        .story-img {
-            width: 100%;
-            height: 280px;
-            object-fit: cover;
-        }
-        .story-info {
-            padding: 25px;
-        }
-        .story-category {
-            color: var(--accent-color);
-            font-size: 0.85rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-            display: block;
-        }
-        .story-title {
-            font-size: 1.6rem;
-            color: var(--primary-color);
-            margin-bottom: 12px;
-            line-height: 1.3;
-        }
-        .story-excerpt {
-            color: #555;
-            font-size: 1rem;
-            margin-bottom: 20px;
-        }
-        .read-more-btn {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: background 0.3s;
-        }
-        .read-more-btn:hover {
-            background-color: var(--accent-color);
-        }
-        /* Sidebar */
-        .sidebar {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        .sidebar-card {
-            background: var(--card-bg);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .sidebar-card h3 {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-            color: var(--primary-color);
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
-        }
-        .sidebar-card p {
-            font-size: 0.9rem;
-            color: var(--meta-color);
-        }
-        /* Footer */
-        footer {
-            background-color: var(--primary-color);
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 50px;
-            font-size: 0.9rem;
-        }
-        @media (max-width: 768px) {
-            .stories-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+        header { background-color: var(--primary-color); color: #fff; padding: 20px 0; text-align: center; border-bottom: 4px solid var(--accent-color); }
+        header h1 { font-size: 2.5rem; letter-spacing: 2px; text-transform: uppercase; }
+        nav { background-color: #222; padding: 10px 0; text-align: center; }
+        nav a { color: #fff; text-decoration: none; margin: 0 15px; font-size: 0.95rem; font-weight: 600; text-transform: uppercase; transition: color 0.3s; }
+        nav a:hover { color: var(--accent-color); }
+        .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+        .section-title { font-size: 1.5rem; text-transform: uppercase; border-bottom: 2px solid var(--primary-color); padding-bottom: 8px; margin-bottom: 25px; letter-spacing: 1px; }
+        .stories-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
+        .stories-list { display: flex; flex-direction: column; gap: 30px; }
+        .main-story-card { background: var(--card-bg); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .main-story-card:hover { transform: translateY(-3px); }
+        .story-img { width: 100%; height: 280px; object-fit: cover; }
+        .story-info { padding: 25px; }
+        .story-category { color: var(--accent-color); font-size: 0.85rem; font-weight: bold; text-transform: uppercase; margin-bottom: 8px; display: block; }
+        .story-title { font-size: 1.6rem; color: var(--primary-color); margin-bottom: 12px; line-height: 1.3; }
+        .story-excerpt { color: #555; font-size: 1rem; margin-bottom: 20px; }
+        .read-more-btn { display: inline-block; background-color: var(--primary-color); color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.3s; }
+        .read-more-btn:hover { background-color: var(--accent-color); }
+        .sidebar { display: flex; flex-direction: column; gap: 20px; }
+        .sidebar-card { background: var(--card-bg); padding: 20px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
+        .sidebar-card h3 { font-size: 1.1rem; margin-bottom: 10px; color: var(--primary-color); border-bottom: 1px solid #eee; padding-bottom: 5px; text-align: left; }
+        footer { background-color: var(--primary-color); color: #fff; text-align: center; padding: 20px 0; margin-top: 50px; font-size: 0.9rem; }
+        @media (max-width: 768px) { .stories-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -196,6 +67,20 @@
         <a href="#">Contact</a>
     </nav>
 
+    <div class="container" style="text-align: center; margin-top: 20px;">
+        <!-- Top Adsterra Banner (468x60) -->
+        <script type="text/javascript">
+            atOptions = {
+                'key' : 'e3cedebca8833b7645e1ad8b2f5f9edc',
+                'format' : 'iframe',
+                'height' : 60,
+                'width' : 468,
+                'params' : {}
+            };
+        </script>
+        <script type="text/javascript" src="//preliminarycultural.com/e3cedebca8833b7645e1ad8b2f5f9edc/invoke.js"></script>
+    </div>
+
     <div class="container">
         <h2 class="section-title">Latest Stories</h2>
         
@@ -203,7 +88,7 @@
             <!-- Stories Column -->
             <div class="stories-list">
                 
-                <!-- Story Card 3: Cheating Wife Story (Nayi Story) -->
+                <!-- Story Card 3 -->
                 <article class="main-story-card">
                     <img src="https://i.pinimg.com/originals/4d/8d/a6/4d8da670bf633d16a0acf7960b46d1f0.gif" alt="Cheating Wife Story Image" class="story-img">
                     <div class="story-info">
@@ -214,7 +99,7 @@
                     </div>
                 </article>
 
-                <!-- Story Card 2: AITAH Story -->
+                <!-- Story Card 2 -->
                 <article class="main-story-card">
                     <img src="https://i.pinimg.com/736x/2b/a6/cf/2ba6cf460bcc855544a608ec758a68e4.jpg" alt="AITAH Story Image" class="story-img">
                     <div class="story-info">
@@ -225,7 +110,7 @@
                     </div>
                 </article>
 
-                <!-- Story Card 1: Previous Story -->
+                <!-- Story Card 1 -->
                 <article class="main-story-card">
                     <img src="https://i.pinimg.com/736x/e3/1a/1d/e31a1d707cf992b0eae2b2d9ed6bb795.jpg" alt="Heartbroken confession" class="story-img">
                     <div class="story-info">
@@ -238,15 +123,41 @@
 
             </div>
 
-            <!-- Sidebar / Trending Section -->
+            <!-- Sidebar / Right Side with Multiple Ads -->
             <aside class="sidebar">
                 <div class="sidebar-card">
-                    <h3>Trending Confession</h3>
-                    <p>More emotional stories and updates coming soon as our community shares their secret truths.</p>
+                    <h3>Sponsored Ad (160x600)</h3>
+                    <!-- Adsterra Sidebar Ad 1 (160x600) -->
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'eb0bedea2d1b25e28173233d88e1c864',
+                            'format' : 'iframe',
+                            'height' : 600,
+                            'width' : 160,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//preliminarycultural.com/eb0bedea2d1b25e28173233d88e1c864/invoke.js"></script>
                 </div>
+
                 <div class="sidebar-card">
+                    <h3>Sponsored Ad (160x300)</h3>
+                    <!-- Adsterra Sidebar Ad 2 (160x300) -->
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'fa10a51ef99cd76f39de630c22a2c7b2',
+                            'format' : 'iframe',
+                            'height' : 300,
+                            'width' : 160,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//preliminarycultural.com/fa10a51ef99cd76f39de630c22a2c7b2/invoke.js"></script>
+                </div>
+
+                <div class="sidebar-card" style="text-align: left;">
                     <h3>About Confession Hub</h3>
-                    <p>A safe space to share real-life emotional confessions, relationship struggles, and secret heartbreaks anonymously.</p>
+                    <p style="font-size: 0.9rem; color: var(--meta-color);">A safe space to share real-life emotional confessions, relationship struggles, and secret heartbreaks anonymously.</p>
                 </div>
             </aside>
         </div>
